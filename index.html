@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+<div id="start-panel">
+    <div class="flex-container">
+      <div id="star-icon">
+        <img
+          id="star"
+          src="images/icon-star.svg"
+          alt="star icon"
+          width="25"
+          height="25"
+        />
+      </div>
+      <div class="felx-container-inner">
+        <div id="rating-title">
+          <h1>How did we do?</h1>
+        </div>
+        <div id="rating-text">
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div id="rating-ball">
+          <div class="ball-placeholder-container">
+            <button class="ball">1</button>
+            <button class="ball">2</button>
+            <button class="ball">3</button>
+            <button class="ball">4</button>
+            <button class="ball">5</button>
+
+          </div>
+        </div>
+        <br>
+        <div id="rating-submit">
+          <button id="submit" onclick="submit()">Submit</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<div id="thanks-panel">
+    <div class="flex-container">
+      <div id="thanks">
+        <img
+          id="thanks-icon"
+          src="images/illustration-thank-you.svg"
+          alt="star icon"
+          width="25"
+          height="25"
+        />
+      </div>
+      <div class="felx-container-inner">
+        <div id = "thanks-selected">
+          <p>You selected <span id="rateNum"></span> out of 5</p>
+        </div>
+        <div id="thanks-title">
+          <h1>Thank you!</h1>
+        </div>
+        <div id="thanks-text">
+          <p>
+            We appreciate you taking the time to give a rating. If
+            you ever need more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
