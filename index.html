@@ -16,73 +16,73 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-<div id="start-panel">
-    <div class="flex-container">
-      <div id="star-icon">
-        <img
-          id="star"
-          src="images/icon-star.svg"
-          alt="star icon"
-          width="25"
-          height="25"
-        />
-      </div>
-      <div class="felx-container-inner">
-        <div id="rating-title">
-          <h1>How did we do?</h1>
+    <div id="start-panel">
+      <div class="flex-container">
+        <div id="star-icon">
+          <img
+            id="star"
+            src="images/icon-star.svg"
+            alt="star icon"
+            width="25"
+            height="25"
+          />
         </div>
-        <div id="rating-text">
-          <p>
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-        </div>
-        <div id="rating-ball">
-          <div class="ball-placeholder-container">
-            <button class="ball">1</button>
-            <button class="ball">2</button>
-            <button class="ball">3</button>
-            <button class="ball">4</button>
-            <button class="ball">5</button>
-
+        <div class="felx-container-inner">
+          <div id="rating-title">
+            <h1>How did we do?</h1>
+          </div>
+          <div id="rating-text">
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div id="rating-ball">
+              <div class="ball-container">
+                <button class="ball" onclick="ballStyle(1)">1</button>
+                <button class="ball" onclick="ballStyle(2)">2</button>
+                <button class="ball" onclick="ballStyle(3)">3</button>
+                <button class="ball" onclick="ballStyle(4)">4</button>
+                <button class="ball" onclick="ballStyle(5)">5</button>
+              </div>
+              <br />
+              <div id="rating-submit">
+                <button id="submitId" class="submitBtn" disabled onclick="submitGo()">
+                  Submit
+                </button>
+              </div>
           </div>
         </div>
-        <br>
-        <div id="rating-submit">
-          <button id="submit" onclick="submit()">Submit</button>
-        </div>
       </div>
-    </div>
     </div>
 
-<div id="thanks-panel">
-    <div class="flex-container">
-      <div id="thanks">
-        <img
-          id="thanks-icon"
-          src="images/illustration-thank-you.svg"
-          alt="star icon"
-          width="25"
-          height="25"
-        />
-      </div>
-      <div class="felx-container-inner">
-        <div id = "thanks-selected">
-          <p>You selected <span id="rateNum"></span> out of 5</p>
+    <div id="thanks-panel">
+      <div class="flex-container">
+        <div id="thanks">
+          <img
+            id="thanks-icon"
+            src="images/illustration-thank-you.svg"
+            alt="star icon"
+            width="25"
+            height="25"
+          />
         </div>
-        <div id="thanks-title">
-          <h1>Thank you!</h1>
-        </div>
-        <div id="thanks-text">
-          <p>
-            We appreciate you taking the time to give a rating. If
-            you ever need more support, don’t hesitate to get in touch!
-          </p>
+        <div class="felx-container-inner">
+          <div id="thanks-selected">
+            <p>You selected <span id="rateNum"></span> out of 5</p>
+          </div>
+          <div id="thanks-title">
+            <h1>Thank you!</h1>
+          </div>
+          <div id="thanks-text">
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
     <script src="script.js"></script>
   </body>

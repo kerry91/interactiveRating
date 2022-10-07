@@ -58,7 +58,7 @@ body{
   line-height: 1.5em;
 }
 
-#submit{
+#submitId{
   text-decoration: none;
   border: none;
   font-size: 20px;
@@ -73,12 +73,12 @@ body{
   margin-bottom: 25px;
 }
 
-#submit:hover {
+#submitId:hover {
 background: #fff;
 color: hsl(25, 97%, 53%);
 }
 
-.ball-placeholder-container{
+.ball-container{
   display: flex;
   flex-direction: row;
 }
@@ -94,7 +94,7 @@ color: hsl(25, 97%, 53%);
   font-size: 16px;
 }
 
-.ball-placeholder-a{
+.ballActive{
   background: hsl(217, 12%, 63%);
   color: #fff;
 }
@@ -107,20 +107,23 @@ color: hsl(25, 97%, 53%);
 #thanks-icon{
   width:150px;
   height:100px;
-  padding-left: 65px;
+  padding-left: 85px;
 }
 
 #thanks-title{
   color: white;
   text-align: center;
+  margin-right: 40px;
 }
 
 #thanks-text{
   color: lightgrey;
   text-align: center;
+  margin-right: 20px;
 }
 
 #thanks-selected{
   color: hsl(25, 97%, 53%);
   text-align: center;
+  margin-right: 40px;
 }
