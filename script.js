@@ -10,7 +10,6 @@ function ballStyle(iv) {
   ballRate[iv-1].classList.add("ballActive");
 
   var remove = document.querySelector(".submitBtn").removeAttribute("disabled");
-console.log(remove);
 }
 
 //Takes the ball rating and adds it to the thank you page span text
